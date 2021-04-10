@@ -66,6 +66,15 @@
                                 <p>{{ $user->age}}</p>
                             </div>
                         </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>gender</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>{{ $user->gender}}</p>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <label>bolde_type</label>
