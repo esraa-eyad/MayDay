@@ -72,12 +72,14 @@
                                 <div class="form-group">
                                     <img src="{{url('/').$user->image}}" class="testimonial-img" alt="">
 
-                                    <h3>{{ $user->name}}</h3>
+                                    <h3>{{ $user->name}}---{{ $user->gender}}</h3>
 
                                 </div>
                                 <div class="form-group">
 
                                     <label for="age">your age</label>
+                                                                        <input value="{{ $user->gender}}" type="hidden" name="gender" id="name"  class="form-control"  required >
+
                                     <input value="{{ $user->name}}" type="hidden" name="name" id="name"  class="form-control"  required >
 
                                     <input type="age" name="age" class="form-control" id="age" placeholder="Enter name" value="{{ $user->age }}">                                    </div>
