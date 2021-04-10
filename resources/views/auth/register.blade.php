@@ -79,7 +79,23 @@
                             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                         </div>
                         <input name="name"  value="{{ old('name') }}" class="form-control" placeholder="Full name" type="text">
-                    </div> <!-- form-group// -->
+                    </div>
+                    
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-tint" ></i> </span>
+                        </div>
+                        <select name="gender"class="form-control">
+                            <option value="{{ old('gender') }}" style="display: none" selected>gender </option>
+                            <option value="male">male</option>
+
+                            <option value="female">female</option>
+                            <option value="animal ">animal</option>
+
+                        </select>
+                    </div>
+
+                    <!-- form-group// -->
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
