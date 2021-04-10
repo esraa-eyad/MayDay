@@ -71,7 +71,7 @@ class UserController extends Controller
             'name' => 'required|string|max:255', $user->name,
             'email' => "required|email|unique:users,email, $user->id",
             'password' => 'sometimes|nullable|min:8',
-
+              'gender' => ['required', 'string'],
             'age' => 'required|string',
             'bolde_type' => 'required|string',
             'chronic_diseases' => 'required',
@@ -87,6 +87,7 @@ class UserController extends Controller
 
 //update all inf user expct QR code
         $user->name = $request->name;
+         $user->gender = $request->gender;
         $user->email = $request->email;
         $user->age = $request->age;
         $user->bolde_type = $request->bolde_type;
